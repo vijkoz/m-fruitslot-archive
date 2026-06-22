@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>水果机 · 玩法与风格速览</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f5f3ef;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #2e2a24;
+    }
+    /* 深色头图 */
+    .hero {
+      background: linear-gradient(145deg, #1f2b2e 0%, #29383c 100%);
+      padding: 4rem 1.5rem 3.2rem;
+      text-align: center;
+      color: #eae5dd;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #b88a5b;
+      opacity: 0.5;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .hero .sub {
+      font-size: 1rem;
+      font-weight: 300;
+      color: #bfb9ad;
+      max-width: 640px;
+      margin: 0.4rem auto 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 0.9rem;
+      display: inline-block;
+    }
+    .hero .sub span {
+      background: rgba(184, 138, 91, 0.25);
+      padding: 0.1rem 0.6rem;
+      border-radius: 3px;
+      font-size: 0.9rem;
+    }
+    /* 浅色正文区 */
+    .content {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 2.8rem 1.5rem 3.6rem;
+      background-color: #f5f3ef;
+    }
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 450;
+      color: #1f2b2e;
+      margin-top: 2.4rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #b88a5b;
+      padding-left: 1rem;
+    }
+    h2:first-of-type {
+      margin-top: 0.2rem;
+    }
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+    }
+    .highlight-box {
+      background: #eae4da;
+      padding: 1.4rem 1.6rem;
+      border-radius: 12px;
+      margin: 1.6rem 0 1.8rem;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+    .highlight-box p {
+      margin-bottom: 0.3rem;
+    }
+    .highlight-box strong {
+      color: #1f2b2e;
+    }
+    ul {
+      list-style: none;
+      margin: 1.2rem 0 1.8rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem 1.5rem;
+    }
+    @media (max-width: 540px) {
+      ul {
+        grid-template-columns: 1fr;
+      }
+    }
+    ul li {
+      background: #eae4da;
+      padding: 0.7rem 1rem 0.7rem 1.8rem;
+      border-radius: 30px;
+      font-size: 0.95rem;
+      position: relative;
+      color: #1f2b2e;
+      font-weight: 420;
+    }
+    ul li::before {
+      content: '◆';
+      position: absolute;
+      left: 0.6rem;
+      top: 0.6rem;
+      font-size: 0.7rem;
+      color: #b88a5b;
+    }
+    .faq-item {
+      border-bottom: 1px dashed #d6cec2;
+      padding: 0.9rem 0;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-q {
+      font-weight: 500;
+      color: #1f2b2e;
+      margin-bottom: 0.25rem;
+    }
+    .faq-a {
+      color: #4f4840;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    /* 强调色链接 — 自然融入句子 */
+    a {
+      color: #9f6d3b;
+      text-decoration: none;
+      font-weight: 450;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s, color 0.2s;
+    }
+    a:hover {
+      color: #624a2c;
+      border-bottom-color: #b88a5b;
+    }
+    .tip-ribbon {
+      background: #dccfc1;
+      padding: 0.9rem 1.5rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin: 1.2rem 0 0.4rem;
+      color: #1f2b2e;
+      font-weight: 350;
+    }
+    .footer-note {
+      margin-top: 2.8rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #dad3c9;
+      font-size: 0.88rem;
+      color: #6b6358;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .footer-note a {
+      font-weight: 400;
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.9rem; }
+      .content { padding: 2rem 1.2rem; }
+      h2 { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 深色头图 -->
+  <section class="hero">
+    <h1>水果机 · 一目了然的风格</h1>
+    <div class="sub"><span>快速识别用途 · 玩法概述</span></div>
+  </section>
+
+  <!-- 浅色正文区 -->
+  <div class="content">
+
+    <!-- 从用户想快速识别网站用途的角度展开 -->
+    <p>当你第一次看到「水果机」这个名称，可能会联想到经典老虎机的视觉元素——樱桃、柠檬、铃铛、BAR 符号。实际上，<a href="https://m-fruitslot.com">水果机</a> 指向的是一种以水果主题为基调的线上互动场景，其核心逻辑延续了传统旋转类游戏的随机组合机制，但界面和反馈更贴合现代触屏操作习惯。</p>
+
+    <p>整个页面围绕一个目的：让访客在几秒内判断这个站点是否与自己的偏好匹配。下面从几个角度拆解它的定位与特点，帮助你快速建立认知。</p>
+
+    <h2>摘要 · 它在解决什么问题？</h2>
+    <p>线上旋转类产品数量庞大，但很多界面信息繁杂、主题雷同。<strong>水果机</strong> 尝试用高辨识度的水果符号降低认知负担，同时保持规则透明——你看到的就是你得到的。不需要阅读长篇规则文档，通过简短的交互指引就能了解赔付线与特殊组合。</p>
+
+    <div class="highlight-box">
+      <p><strong>一句话概括：</strong> 一个以水果符号为视觉主线的轻量随机互动场景，结构清晰，适合快速了解基础玩法。</p>
+    </div>
+
+    <h2>亮点 · 区别于同类的地方</h2>
+    <ul>
+      <li>符号体系统一，避免花哨无关元素</li>
+      <li>移动端优先布局，单手操作友好</li>
+      <li>反馈节奏适中，不刻意加速或拖延</li>
+      <li>常见的三轴五线结构，易于理解</li>
+    </ul>
+    <p>这些特性并非标榜“颠覆性”，而是让第一次接触的用户把注意力放在符号组合和随机结果本身，而非被复杂的界面分散精力。</p>
+
+    <h2>使用建议 · 怎么开始比较合适？</h2>
+    <p>如果你对这类休闲互动感兴趣，可以先用浏览的心态观察几轮符号轮转，不必急于操作。大部分页面在加载后会有简短的动效示意，那是最好的入门指引。建议使用 Wi‑Fi 或稳定的移动网络，避免加载过程中断影响体验。同时留意设备音量——部分反馈配有轻微音效，公共场所可提前调低。</p>
+
+    <p>对于有经验的使用者，可以留意不同水果组合对应的倍率说明，通常在帮助图标或信息侧栏中列出。掌握基础组合后，再尝试调整下注档位会更有方向。</p>
+
+    <h2>场景与可信说明</h2>
+    <p>水果机设计场景偏向个人休闲间隙：通勤、午休、等候时打开看一眼结果。它不模拟真实博彩环境，也不标注虚拟货币兑换通道，本质上是一个带有反馈机制的随机组合浏览工具。页面内容围绕视觉与交互本身，不包含诱导充值或虚假中奖提示。</p>
+
+    <div class="tip-ribbon">⏺ 提示：任何线上随机结果均不具备预测性，请保持合理预期。</div>
+
+    <!-- FAQ 摘要 -->
+    <h2>常见疑问摘要</h2>
+    <div class="faq-item">
+      <div class="faq-q">‣ 是否需要注册或提供个人信息？</div>
+      <div class="faq-a">按照当前页面结构，进入后可直接观察或操作，未发现强制注册环节。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">‣ 水果机与传统线上旋转机有什么直观区别？</div>
+      <div class="faq-a">视觉符号更集中，没有过多装饰边框与动画干扰；操作按钮减少至必要程度。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">‣ 页面是否包含真实货币交易？</div>
+      <div class="faq-a">从公开界面判断，所有数值仅作为游戏内部积分或奖励展示，不涉及真实货币存取。具体以页面实际声明为准。</div>
+    </div>
+
+    <div class="footer-note">
+      <span>概述页 · 内容仅供参考</span>
+      <span><a href="https://m-fruitslot.com">水果机</a> 直接访问</span>
+    </div>
+  </div>
+
+</body>
+</html>
